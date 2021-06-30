@@ -195,6 +195,7 @@ print("Describe : ",df.describe())
 
 ## Handling missing values in the DataFrame
 `df.dropna()`: Drop rows with any column having NA/null data.
+<br>
 `df.fillna(value)`: Replace all NA/null data with value.
 ```sh
 #drop NA/null values
