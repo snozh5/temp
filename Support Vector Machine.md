@@ -30,12 +30,15 @@ In order to understand the ***working*** of ***linear SVM*** let us take an exam
 A ***positive value*** (blue points in the plot above) simply mean that the values are in one class; however, a ***negative value*** (red points in the plot above) would mean that is of the other class. The point lies on the line i.e on hyperplane if the value is zero because any point on the line will satisfy the equation: `W0 + W1x1 + W2x2=0`.
 > 3rd line(Hyperplane) should be considered as best fit classifier in the above figure. 
 2. **Non-linear SVM:-** In non-linear SVM the dataset cannot be divided simply by drawing a straight line. Meaning the dataset in not linearly separable and cannot be categorize into two classes by just fitting a straight line which was the case of a linear SVM.
+
 [![Non linear SVM](https://github.com/snozh5/temp/blob/main/SVM%20pic/Non%20linear%20SVM.PNG?raw=true)](https://github.com/snozh5/temp/blob/main/SVM%20pic/Non%20linear%20SVM.PNG)
 
 For the working principle of non linear SVM consider the image above. The data points are non linear and it cannot be seperated by just fitting a straight line. So in order to seperate these data points a new new dimension needs to be introduced. For linear data we got x and y as dimension so the new dimension is z and the formula is `z=x^2 +y^2`. So after adding the 3rd dimension SVM will divided the data points into different classes which will look like in the figure below:
+
 [![Non linear SVM 3D](https://github.com/snozh5/temp/blob/main/SVM%20pic/Non%20linear%20SVM%203D.PNG?raw=true)](https://github.com/snozh5/temp/blob/main/SVM%20pic/Non%20linear%20SVM%203D.PNG)
 
 If we take z=1 we can view it in 2d space which will look like the figure below:
+
 [![Non linear SVM 2D](https://github.com/snozh5/temp/blob/main/SVM%20pic/Non%20linear%20SVM%202D.PNG?raw=true)](https://github.com/snozh5/temp/blob/main/SVM%20pic/Non%20linear%20SVM%202D.PNG)
 
 Thus the data points got classified into two classes and that's how non-linear SVM works. 
