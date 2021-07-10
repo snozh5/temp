@@ -17,23 +17,27 @@ The advantage or pros of SVM is that it works well with high dimensional space b
 ## Important concepts related to SVM
 [![SVM 2d](https://github.com/snozh5/temp/blob/main/SVM%20pic/SVM%202D%20plane.png?raw=true)](https://github.com/snozh5/temp/blob/main/SVM%20pic/SVM%202D%20plane.png)
 
-- Hyperplane:-  It is a boundary or decision plane which categorize the dataset for example classifies Spam email from the ham ones.
-- Support vectors:- The data points that are nearest to the hyperplane which helps it to give the best possible boundary, hence supporting the hyperplane so they are called as Support Vector. 
-- Margin:- The gap or the perpendicular distance between the line and support vector is called as margin. The best fit margin is the one with the maximum gap. 
+- **Hyperplane:-**  It is a boundary or decision plane which categorize the dataset for example classifies Spam email from the ham ones.
+- **Support vectors:-** The data points that are nearest to the hyperplane which helps it to give the best possible boundary, hence supporting the hyperplane so they are called as Support Vector. 
+- **Margin:-** The gap or the perpendicular distance between the line and support vector is called as margin. The best fit margin is the one with the maximum gap. 
 
 ## Types of SVM and Working Principle
 Support Vector Mahcine can be divided into two types:-
-1. Linear SVM:- In linear SVM the dataset can be divided using just a single straight line. Meaning dataset is linearly separable and categorize into two classes.  
+1. **Linear SVM:-** In linear SVM the dataset can be divided using just a single straight line. Meaning dataset is linearly separable and categorize into two classes.  
 [![Linear SVM](https://github.com/snozh5/temp/blob/main/SVM%20pic/Linear%20SVM.png?raw=true)](https://github.com/snozh5/temp/blob/main/SVM%20pic/Linear%20SVM.png)
-In order to understand the **working** of **linear SVM** let us take an example of a dataset where we need to identify for spam and ham emails. The standard equation of a line is given by `ax + by + c = 0`. We can generalise the equation `W0 + W1x1 + W2x2=0`, where 'x1' and 'x2' are the features — such as 'word_freq_technology' and 'word_freq_offer' — and W1 and W2 are the coefficients. For any line with W coefficients, substituting the value of features x1 and x2 in the equation of the line determined by its W coefficients, will return a value.   
-A **positive value** (blue points in the plot above) simply mean that the values are in one class; however, a **negative value** (red points in the plot above) would mean that is of the other class. The point lies on the line i.e on hyperplane if the value is zero because any point on the line will satisfy the equation: `W0 + W1x1 + W2x2=0`.
+
+In order to understand the ***working*** of ***linear SVM*** let us take an example of a dataset where we need to identify for spam and ham emails. The standard equation of a line is given by `ax + by + c = 0`. We can generalise the equation `W0 + W1x1 + W2x2=0`, where 'x1' and 'x2' are the features — such as 'word_freq_technology' and 'word_freq_offer' — and W1 and W2 are the coefficients. For any line with W coefficients, substituting the value of features x1 and x2 in the equation of the line determined by its W coefficients, will return a value.   
+A ***positive value*** (blue points in the plot above) simply mean that the values are in one class; however, a ***negative value*** (red points in the plot above) would mean that is of the other class. The point lies on the line i.e on hyperplane if the value is zero because any point on the line will satisfy the equation: `W0 + W1x1 + W2x2=0`.
 > 3rd line(Hyperplane) should be considered as best fit classifier in the above figure. 
-2. Non-linear SVM:- In non-linear SVM the dataset cannot be divided simply by drawing a straight line. Meaning the dataset in not linearly separable and cannot be categorize into two classes by just fitting a straight line which was the case of a linear SVM.
+2. **Non-linear SVM:-** In non-linear SVM the dataset cannot be divided simply by drawing a straight line. Meaning the dataset in not linearly separable and cannot be categorize into two classes by just fitting a straight line which was the case of a linear SVM.
 [![Non linear SVM](https://github.com/snozh5/temp/blob/main/SVM%20pic/Non%20linear%20SVM.PNG?raw=true)](https://github.com/snozh5/temp/blob/main/SVM%20pic/Non%20linear%20SVM.PNG)
+
 For the working principle of non linear SVM consider the image above. The data points are non linear and it cannot be seperated by just fitting a straight line. So in order to seperate these data points a new new dimension needs to be introduced. For linear data we got x and y as dimension so the new dimension is z and the formula is `z=x^2 +y^2`. So after adding the 3rd dimension SVM will divided the data points into different classes which will look like in the figure below:
 [![Non linear SVM 3D](https://github.com/snozh5/temp/blob/main/SVM%20pic/Non%20linear%20SVM%203D.PNG?raw=true)](https://github.com/snozh5/temp/blob/main/SVM%20pic/Non%20linear%20SVM%203D.PNG)
+
 If we take z=1 we can view it in 2d space which will look like the figure below:
 [![Non linear SVM 2D](https://github.com/snozh5/temp/blob/main/SVM%20pic/Non%20linear%20SVM%202D.PNG?raw=true)](https://github.com/snozh5/temp/blob/main/SVM%20pic/Non%20linear%20SVM%202D.PNG)
+
 Thus the data points got classified into two classes and that's how non-linear SVM works. 
 
 ## Kernels 
