@@ -47,7 +47,7 @@ Thus the data points got classified into two classes and that's how non-linear S
 
  Kernels are functions which help to transform non-linear datasets. They take input as a low dimension and transform it into a high dimension space and such technique is called as kernel trick. Given a dataset, we can try various kernels, and choose the one that produces the best model. Top three commonly used kernel functions are:-
 
-- **The Linear Kernel:-** Ths kernel is the basic of all, as the name suggest it linearly seperate the classes. Mostly used for text recognition problems. Computational time is faster than other kernels. 
+- **The Linear Kernel:-** Ths kernel is the basic of all, as the name suggest it linearly separate the classes. Mostly used for text recognition problems. Computational time is faster than other kernels. 
 - **The Polynomial Kernel:-** This is kernel is used to create polynomial decision boundaries in non-linear datasets.
 - **The Radial Basis Function (RBF) kernel:-** This kernel is one of the most popular and largely used when the dataset is non-linear. It has the ability to convert highly non-linear feature to linear space.
 
