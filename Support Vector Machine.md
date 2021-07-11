@@ -1,6 +1,7 @@
 # Support Vector Machine
 ## Introduction to SVM
-Support Vector Machine also known as SVM in short is a supervised machine learning algorithm. It is used for regression as well as classification problem but commonly used for classification problems. It uses the concept of hyperplane. It can be a line, 2D planes or even n-dimentional planes. We will learn more about hyperplane in later section.
+Support Vector Machine also known as SVM in short is a supervised machine learning algorithm. It is used for regression as well as classification problem but commonly used for classification problems. It uses the concept of hyperplane. It can be a line, 2D planes or even n-dimentional planes. We will learn more about hyperplane in later section.<br>
+The advantage or pros of SVM is that it works well with high dimensional space but the disadvantage of SVM is, it takes a lot of time to for training and therefore it is not advisable to use when the dataset is too large. 
 
 > Fun fact: Although SVM can deal with non-linear data but the algorithm belongs to Linear Machine Learning Models. 
 
@@ -10,9 +11,6 @@ Support Vector Machine algorithm is used in many fields some of them are:-
 2.  Face detection 
 3.  Voice detection
 4.  Handwriting recognition
-
-## Pros and Cons of SVM
-The advantage or pros of SVM is that it works well with high dimensional space but the disadvantage of SVM is, it takes a lot of time to for training and therefore it is not advisable to use when the dataset is too large. 
 
 ## Important concepts related to SVM
 [![SVM 2d](https://github.com/snozh5/temp/blob/main/SVM%20pic/SVM%202D%20plane.png?raw=true)](https://github.com/snozh5/temp/blob/main/SVM%20pic/SVM%202D%20plane.png)
@@ -52,6 +50,7 @@ Thus the data points got classified into two classes and that's how non-linear S
 - **The Radial Basis Function (RBF) kernel:-** This kernel is one of the most popular and largely used when the dataset is non-linear. It has the ability to convert highly non-linear feature to linear space.
 
 ### Implementation
+The implementation is done using python that uses a package name [sklearn](https://scikit-learn.org/stable/modules/svm.html) through which we need to import SVM.
 ```sh
 #This tutorial will help you to learn to choose the best keranls
 #types of SVM - 1.linear SVM, 2.kernal SVM
@@ -115,7 +114,9 @@ for kernal in kernals:
 
     plt.show()
 ```
-[![Dataset 1](https://github.com/snozh5/temp/blob/main/SVM%20pic/resultK.PNG?raw=true)](https://github.com/snozh5/temp/blob/main/SVM%20pic/resultK.PNG)
+[![linear Kernel](https://github.com/snozh5/temp/blob/main/SVM%20pic/resultL.PNG?raw=true)](https://github.com/snozh5/temp/blob/main/SVM%20pic/resultL.PNG)<br>
+[![Polynomial Kernel](https://github.com/snozh5/temp/blob/main/SVM%20pic/resultP.PNG?raw=true)](https://github.com/snozh5/temp/blob/main/SVM%20pic/resultP.PNG)<br>
+[![RBF Kernel](https://github.com/snozh5/temp/blob/main/SVM%20pic/resultR.PNG?raw=true)](https://github.com/snozh5/temp/blob/main/SVM%20pic/resultR.PNG)
 
 
 
